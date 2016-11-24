@@ -15,7 +15,7 @@ const initialState = {
   ],
 }
 
-const navigationState = (state = initialState, action) {
+const navigationState = (state = initialState, action) => {
   switch (action.type) {
     case PUSH_ROUTE:
       if (state.routes[state.index].key === (action.route && action.route.key)) return state

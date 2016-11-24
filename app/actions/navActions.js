@@ -1,14 +1,21 @@
-import { POP_ROUTE, PUSH_ROUTE } from '../constants/ActionTypes.js'
+import { POP_ROUTE, PUSH_ROUTE, CHANGE_TAB } from '../constants/ActionTypes.js'
 
-export push = (route) => {
+export const push = (route) => {
   return {
     type: PUSH_ROUTE,
     route
   }
 }
 
-export pop = () => {
+export const pop = () => {
   return {
     type: POP_ROUTE
+  }
+}
+
+export const changeTab = (index) => {
+  return {
+    type: CHANGE_TAB,
+    index
   }
 }
