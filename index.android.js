@@ -8,9 +8,11 @@ import TabsRootContainer from './app/containers/tabsRootContainer'
 import { Provider } from 'react-redux'
 
 const App = () => {
+  return (
   <Provider store={store}>
     <TabsRootContainer />
   </Provider>
+  )
 }
 
 AppRegistry.registerComponent('RNExperimentalRedux', () => App);
